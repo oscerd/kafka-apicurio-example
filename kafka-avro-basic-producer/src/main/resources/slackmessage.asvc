@@ -1,0 +1,100 @@
+{
+  "type" : "record",
+  "name" : "SlackMessage",
+  "namespace" : "org.apache.camel.component.slack.helper",
+  "fields" : [ {
+    "name" : "attachments",
+    "type" : [ "null", {
+      "type" : "array",
+      "items" : {
+        "type" : "record",
+        "name" : "Attachment",
+        "namespace" : "org.apache.camel.component.slack.helper.SlackMessage$",
+        "fields" : [ {
+          "name" : "authorIcon",
+          "type" : [ "null", "string" ]
+        }, {
+          "name" : "authorLink",
+          "type" : [ "null", "string" ]
+        }, {
+          "name" : "authorName",
+          "type" : [ "null", "string" ]
+        }, {
+          "name" : "color",
+          "type" : [ "null", "string" ]
+        }, {
+          "name" : "fallback",
+          "type" : [ "null", "string" ]
+        }, {
+          "name" : "fields",
+          "type" : [ "null", {
+            "type" : "array",
+            "items" : {
+              "type" : "record",
+              "name" : "Field",
+              "namespace" : "org.apache.camel.component.slack.helper.SlackMessage$Attachment$",
+              "fields" : [ {
+                "name" : "shortValue",
+                "type" : [ "null", "boolean" ]
+              }, {
+                "name" : "title",
+                "type" : [ "null", "string" ]
+              }, {
+                "name" : "value",
+                "type" : [ "null", "string" ]
+              } ]
+            }
+          } ]
+        }, {
+          "name" : "footer",
+          "type" : [ "null", "string" ]
+        }, {
+          "name" : "footerIcon",
+          "type" : [ "null", "string" ]
+        }, {
+          "name" : "imageUrl",
+          "type" : [ "null", "string" ]
+        }, {
+          "name" : "pretext",
+          "type" : [ "null", "string" ]
+        }, {
+          "name" : "text",
+          "type" : [ "null", "string" ]
+        }, {
+          "name" : "thumbUrl",
+          "type" : [ "null", "string" ]
+        }, {
+          "name" : "title",
+          "type" : [ "null", "string" ]
+        }, {
+          "name" : "titleLink",
+          "type" : [ "null", "string" ]
+        }, {
+          "name" : "ts",
+          "type" : [ "null", {
+            "type" : "long",
+            "java-class" : "java.lang.Long"
+          } ]
+        } ]
+      }
+    } ]
+  }, {
+    "name" : "channel",
+    "type" : [ "null", "string" ]
+  }, {
+    "name" : "iconEmoji",
+    "type" : [ "null", "string" ]
+  }, {
+    "name" : "iconUrl",
+    "type" : [ "null", "string" ]
+  }, {
+    "name" : "text",
+    "type" : [ "null", "string" ]
+  }, {
+    "name" : "user",
+    "type" : [ "null", "string" ]
+  }, {
+    "name" : "username",
+    "type" : [ "null", "string" ]
+  } ]
+}
